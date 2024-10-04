@@ -1,0 +1,913 @@
+/* ===============google fonts gupter======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ===============google fonts gupter======= */
+
+/* ===============Common CSS=============== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+br,
+a,
+div,
+img,
+span,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --banner_color: #1C1E53;
+    --button_color: #FCD980;
+    --white_color: #ffffff;
+    --primary_font_color:#282938;
+    --popins: "Poppins", sans-serif;
+    --heading_font_size: 48px;
+    --heading_font_weight: 600;
+    --heading_line_height: 64px;
+}
+
+/* ===============Common CSS=============== */
+
+/* ===============Navbar CSS============= */
+.ourCoustomeNav {
+    background-color: var(--banner_color);
+    padding: 16px 0;
+
+}
+
+.CustomNavItem {
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: var(--popins);
+
+
+}
+
+.CustomNavItem a {
+    color: #BBBBCB;
+    transition: all linear .3s;
+}
+
+.CustomNavItem a:hover {
+    color: var(--white_color);
+}
+
+.coutomButtonNav {
+    width: 185px;
+    height: 60px;
+    border-radius: 41px;
+    border: 4px solid rgb(71, 73, 117);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: var(--popins);
+    background-color: transparent;
+    color: var(--white_color);
+    transition: ease-in-out .3s;
+
+
+
+}
+
+.coutomButtonNav:hover {
+    background-color: var(--button_color);
+    border: none;
+}
+
+/* ===============Navbar CSS============= */
+/* ===============banner CSS============= */
+.banner {
+    background-color: var(--banner_color);
+    padding: 128px 0;
+}
+
+.bannerLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.bannerLeft__Title {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    font-family: var(--popins);
+    color: var(--white_color);
+}
+
+.bannerLeft__Summary {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--white_color);
+    font-family: var(--popins);
+    opacity: 0.7;
+
+}
+
+.View--work {
+    background-color: var(--button_color);
+    color: #1B1C2B;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.ViewPricing {
+    color: white;
+    border: none;
+    font-size: 18px;
+
+
+
+}
+
+.View--Pricing {
+    background-color: transparent;
+    border: none;
+
+}
+
+.View--Pricing:hover {
+    background-color: transparent;
+}
+
+/* ==============banner CSS============= */
+/* ===============WorkPart CSS============= */
+.WorkPart {
+    padding: 128px 0;
+    background-color: #F4F6FC;
+}
+
+.GetInTouch {
+    color: #2405F2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+}
+
+.WorkPartLeft__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+}
+
+.WorkPartLeft__Summary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+    opacity: 0.7;
+    width: 336px;
+    height: 56px;
+}
+
+.GetInTouchLink {
+    color: #2405F2;
+}
+
+.WorkPartLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.WorkPartRight__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+}
+
+.WorkPartRight__Summary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #282938;
+}
+
+.WorkPartRight {
+    row-gap: 18px;
+}
+
+.WorkPartLeftAndRightWrapper {
+    display: flex;
+    column-gap: 142px;
+}
+
+/* ===============WorkPart CSS============= */
+/* ===============Project CSS============= */
+.Project {
+    padding: 128px 0;
+    background-color: var(--white_color);
+}
+
+.ProjectTop {
+    padding-bottom: 64px;
+}
+
+
+.ProjectTop__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+}
+
+
+.ProjectTop__Link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+
+
+
+}
+
+.ProjectBotttomLeft {
+
+    max-height: 650px;
+    position: relative;
+
+
+}
+
+.ProjectBotttomLeft:hover .ProjectBotttomLeft__Overlay {
+
+    opacity: 1;
+    left: 0;
+    top: 0;
+
+}
+
+.ProjectBotttomLeft__Overlay {
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(to top, rgb(28, 30, 83), rgba(28, 30, 83, 0.352));
+    top: 0;
+    left: -50%;
+    position: absolute;
+    opacity: 0;
+    transition: all linear 0.6s;
+
+
+
+}
+
+.ProjectBotttomLeft__OverlayTitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: var(--popins);
+    color: var(--white_color);
+}
+
+.ProjectBotttomLeft__OverlaySummary {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--white_color);
+    opacity: 0.7;
+}
+
+.ProjectBotttomLeft__OverlayLink {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #FCD980;
+    padding-top: 24px;
+}
+
+.ProjectBotttomLeft__OverlayContentWrapper {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: start;
+    justify-content: flex-end;
+    padding-left: 40px;
+    padding-bottom: 50px;
+
+
+}
+
+.ProjectBotttomRight {
+    max-height: 294px;
+    position: relative;
+}
+
+.ProjectBotttomRight:hover .ProjectBotttomRight__Overlay {
+    right: 0;
+    opacity: 1;
+
+}
+
+.ProjectBotttomRight__Overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(28, 30, 83), rgba(28, 30, 83, 0.352));
+    position: absolute;
+    top: 0;
+    right: -40%;
+    transition: all linear 0.6s;
+    opacity: 0;
+}
+
+.ProjectBotttomRight__OverlayTitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: var(--popins);
+    color: var(--white_color);
+    width: 210px;
+    height: 72px;
+}
+
+.ProjectBotttomRight__OverlayLink {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #FCD980;
+}
+
+.ProjectBotttomRight__OverlayContentWrapper {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    row-gap: 20px;
+    padding-left: 40px;
+    padding-bottom: 10%;
+}
+
+
+
+
+/*===============Project CSS============= */
+/*===============SolvesProblems CSS============= */
+
+.SolvesProblems {
+    background-color: #f4f6fc;
+    padding: 128px 0;
+}
+.SolvesProblemsTop{
+    padding-bottom: 44px;
+}
+
+
+.SolvesProblemsTop__titleFeatures {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+    text-align: center;
+
+}
+
+.SolvesProblemsTop__titleMainFull {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+    width: 630px;
+    height: 192px;
+    text-align: center;
+
+}
+
+.SolvesProblemsCard {
+    width: 405px;
+    height: 316px;
+    background-color: var(--white_color);
+
+     
+}
+.SolvesProblemsCard:hover{
+ 
+    transform: translateY(10%);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.65);
+}
+.SolvesProblemsCardContentWrapper {
+    padding-left: 48px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 58px;
+}
+
+.SolvesProblemsCard__Title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-size: var(--popins);
+    color: var(--primary_font_color);
+}
+
+.SolvesProblemsCard__Summary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+    opacity: 0.7;
+}
+
+i[class="fa-solid fa-users"],i[class="fa-sharp fa-solid fa-circle-check"],i[class="fa-solid fa-pen-ruler"],
+i[class="fa-sharp fa-solid fa-clock"],i[class="fa-solid fa-comments-question"],
+i[class="fa-sharp fa-solid fa-file-pen"]{
+    color: #2405F2;
+}
+
+/*===============SolvesProblems CSS============= */
+/*===============ClientsSay CSS============= */
+.ClientsSay{
+    padding: 128px 0;
+    background-color: #f9fbfd;
+}
+
+.ClientsSayLeftTitle{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+    width: 327px;
+    height: 112px;
+}
+
+.ClientsSayLeftSummary{
+    font-size:16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary_font_color);
+    opacity: 0.7;
+    width: 327px;
+    height: 56px;
+}
+
+.ClientsSayRight__title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+}
+.ClientsSayRightBottom{
+    column-gap: 14px;
+}
+.ClientsSayRightBottom__rightTitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.ClientsSayRightBottom__rightDesignation{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    color:var(--primary_font_color);
+    font-family: var(--popins);
+}
+
+/*===============ClientsSay CSS============= */
+/*===============FAQ CSS============= */
+.FAQ{
+    background-color:var(--white_color);
+    padding: 128px 0;
+}
+.FAQLeft__title{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+    max-width: 328px;
+    max-height: 112px;
+}
+
+.FAQLeft__Link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: #2405F2;
+}
+.FAQLeft{
+    row-gap: 16px;
+}
+.accordion-button:not(.collapsed) {
+
+    color:var(--primary_font_color);
+    background-color:transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color:var(--primary_font_color);
+    text-align: left;
+    /* background-color: var(--bs-accordion-btn-bg); */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none;
+}
+
+.accordion-body {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+    /* padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x); */
+    padding-left: 105px;
+}
+.FAQ__Number{
+    font-size: 28px;
+    font-weight: 500;
+    vertical-align: middle;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #2405F2;
+    padding-right:60px;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image:url(../images/faq_plus.png);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image:url(../images/faq_cross.png);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+/*===============FAQ CSS============= */
+/*===============EarlyStartUp CSS============= */
+
+.EarlyStartUp{
+    padding: 128px 0;
+    background-color: var(--white_color);
+}
+
+.EarlyStartUpLeft{
+    width:668.81px;
+    height: 691px;
+    position: relative;
+}
+
+.EarlyStartUpLeft__OverlayForText{
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-left: 31px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: start;
+    justify-content: center;
+}
+.EarlyStartUpLeft__OverlayForTextTitle{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: var(--white_color);
+    font-family: var(--popins);
+    width: 473.06px;
+    height: 225px;
+}
+
+.EarlyStartUpLeft__OverlayForTextSummary{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--white_color);
+    opacity: 0.7;
+}
+.EarlyStartUpRight{
+    background-color: var(--banner_color);
+    height: 100%;
+    width: 100%;
+    padding-left:96px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+    padding-top:96px;
+}
+
+.name{
+    background-color: transparent;
+    border: 4px solid #27295ceb;
+    border-radius: 8px;
+    width: 432px;
+    height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #F4F6FC;
+    
+}
+.EarlyStartUpRight__Title{
+    font-size: 32px;
+    font-family: 500;
+    line-height: 48px;
+    font-family: var(--popins);
+    color: var(--white_color);
+}
+
+.EarlyStartUpRight__Summary{
+    font-size: 16px;
+    font-family: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--white_color);
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    padding-top: 32px;
+}
+.EarlyStartUpRight__Button{
+    width: 432px;
+    height: 64px;
+    background-color: var(--button_color);
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--primary_font_color);
+    font-family: var(--popins);
+    padding-top: 10px;
+
+}
+.EarlyStartUpRight__Button:hover{
+    background-color: transparent;
+    color: var(--white_color);
+    border: 4px solid #474975;
+
+}
+.EarlyStartUpRightButton__Link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--white_color);
+    padding-left: 100px;
+}
+.EarlyStartUpContentWrapper{
+    position: relative;
+}
+.EarlyStartUpContentWrapper:hover .EarlyStartUp__OverlayMainFull{
+    top: -100%;
+    opacity: 0;
+}
+.EarlyStartUp__OverlayMainFull{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(28, 30, 83, 0.475),rgba(62, 66, 185, 0.159));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease-in-out .6s;
+    opacity: 1;
+}
+/*===============EarlyStartUp CSS============= */
+/*===============Our_blog CSS============= */
+.OurBlog{
+    background-color:var(--white_color);
+    padding: 128px 0;
+}
+.OurBlogTop{
+    padding-bottom: 64px;
+}
+.OurBlog__title{
+    font-size: 48px;
+    font-size: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.OurBlogCard{
+    width: 405px;
+    height: 609px;
+}
+.OurBlogCard__TextWrapper{
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 16px;
+}
+.OurBlogCard__date{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.OurBlogCard__headline{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.OurBlogCard__Summary{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color:var(--primary_font_color) ;
+    opacity: 0.7;
+}
+.OurBlogCard__Link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+/*===============Our_blog CSS============= */
+/*===============Footer CSS============= */
+.Footer{
+    background-color: var(--banner_color);
+    padding-top: 128px;
+}
+.FooterTopLeft__Title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color:var(--white_color);
+}
+.FooterTopLeft{
+    row-gap: 22px;
+}
+.FooterTopRight__Title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color:var(--white_color);
+}
+.FooterTopRight__Summary{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #F4F6FC;
+}
+.FooterTopRight__Logo{
+    display: flex;
+    column-gap: 27px;
+}
+.FooterTopRight{
+    row-gap: 18px;
+}
+.FooterWrapper{
+    display: flex;
+    column-gap: 260px;
+}
+i[class="fa-brands fa-facebook fa-beat"],
+i[class="fa-brands fa-twitter fa-beat"],
+i[class="fa-brands fa-instagram fa-beat"],
+i[class="fa-brands fa-linkedin fa-beat"]
+{   
+    
+    color: var(--white_color);
+    padding-top: 12px;
+}
+.FooterBottomWrapper{
+    background-color: var(--button_color);
+    display: flex;
+    column-gap: 29px;
+    padding-left: 27px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    
+}
+.FooterBottomWrapper__EmailTitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.FooterBottomWrapper__Email{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+    opacity: 0.7;
+}
+/*===============Footer CSS============= */
+/*===============CopyRight CSS============= */
+.CopyRight{
+    padding: 22px 0;
+}
+.copyright--Item{
+    background-color: var(--white_color);
+
+}
+.CopyRightLeft{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.CopyRightItem{
+    padding-left: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color:var(--primary_font_color);
+    
+}
+.CopyRightItem:hover{
+    color: var(--button_color);
+}
+/*===============CopyRight CSS============= */
